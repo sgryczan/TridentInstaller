@@ -14,7 +14,7 @@ jobs:
         id: get_version
         run: echo ::set-env name=RELEASE_VERSION::$(git describe --tags --abbrev=0)
       - name: Build and Publish
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: netapp/ez-rancher-trident-installer
           username: ${{ secrets.DOCKER_HUB_USER }}
