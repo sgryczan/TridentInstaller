@@ -1,5 +1,5 @@
-VERSION=0.0.1
-IMAGE_NAME=sgryczan/trident-installer
+VERSION=0.0.2
+IMAGE_NAME=netapp/ez-rancher-trident-installer
 
 .PHONY: build
 build:
